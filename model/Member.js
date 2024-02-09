@@ -16,7 +16,8 @@ const memberSchema = new Schema({
             required: true
           },
       borrowedBooks: [{
-            type: Schema.Types.ObjectId, ref: 'book',
+            type: Schema.Types.ObjectId, 
+            ref: 'Book'
       }]
 })
 

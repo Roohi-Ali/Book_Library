@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrow</title>
+</head>
+<body>
+
+    <p>Following Books have been borrowed by User: </p><br>
+    <% if (query.length > 0) {  query.forEach((row) => { %>
+    <table><tr><td><%= row.bname %> </td><td><%= row.author %></td></tr></table>
+        <% })} else{ %> 
+    <p>No Borrowed Books</p> <% } %>
+
+    <br>
+    <form method="POST" action="/">
+    <p>
+        <button type="submit" formaction="/booklist">Browse more Books in Library</button>
+        <button type="submit" formaction="/logOut">Log Out</button>
+    </p>
+</form>
+</body>
+</html>

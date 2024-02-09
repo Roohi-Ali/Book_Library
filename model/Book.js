@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
 const bookSchema = new mongoose.Schema({
-    b_id: Number,
     bname: {
       type: String,
       required: true
@@ -9,6 +8,10 @@ const bookSchema = new mongoose.Schema({
       author: {
         type: String,
         required: true
+      },
+      available:{
+        type: Boolean,
+        default:true
       }
   });
 

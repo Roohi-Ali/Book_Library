@@ -20,7 +20,7 @@ router.post('/checkOut',funcs.checkOut)
 
 router.post('/returnBook',funcs.returnBook)
 router.post('/chkStatus',funcs.chkStatus)
-
+router.post('/borrow',funcs.borrow)
 
 router.post('/bookForm',funcs.addBook)
 
