@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <%- include('navbar.ejs') %>
+        <style>
+            .pageht {
+                height: 60vh;
+            }
+        </style>
+
+        <!-- <link rel="stylesheet" href="public/css/styles.css" type="text/css"> -->
+</head>
+
+<body>
+    <div class="container pageht ">
+        <h2>Hello <%= mem %>
+        </h2><br><br>
+
+
+        <form method="POST" action="/">
+            <!-- --bs-btn-padding-x: 2rem; -->
+            <div class="d-grid gap-2 ">
+                <button class="btn btn-primary btn-lg" style="--bs-btn-padding-y: 1rem; --bs-btn-font-size: 1.5rem;" type="submit" formaction="/borrowBook">Borrow a Book</button>
+                <button class="btn btn-warning btn-lg" style="--bs-btn-padding-y: 1rem;--bs-btn-font-size: 1.5rem;" type="submit" formaction="/returnBook">Return a Book</button>
+                <button class="btn btn-danger btn-lg" style="--bs-btn-padding-y: 1rem; --bs-btn-font-size: 1.5rem;" type="submit" formaction="/chkStatus">Check Status</button>
+                <button class="btn btn-success btn-lg" style="--bs-btn-padding-y: 1rem; --bs-btn-font-size: 1.5rem;" type="submit" formaction="/booklist">Show Books in Library</button>
+            </div>
+        </form>
+
+        <!-- <form method="POST" action="/bookForm">
+            <div class="container1">
+                <h4>Enter Book Details</h4>
+                <hr>
+
+                <label for="bname"><b>Book Name</b></label>
+                <input type="text" placeholder="Enter Book Name" name="bname" id="bname" required>
+                <br>
+                <label for="author"><b>Author</b></label>
+                <input type="text" placeholder="Enter Author name" name="author" id="author" required>
+                <br>
+                <button type="submit" class="submit">Submit</button>
+            </div> -->
+
+    </div>
+
+    <%- include('footer.ejs') %>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+</body>
+
+</body>
+
+</html>

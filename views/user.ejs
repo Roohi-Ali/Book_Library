@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Users</title>
+  <link rel="stylesheet" href="public/css/styles.css" type="text/css">
+</head>
+
+<body>
+  <form method="POST" action="/user">
+    <div class="container1">
+      <h3>Register</h3>
+      <!-- <p>Please fill in this form to create an account.</p> -->
+      <hr>
+      <table>
+      <tr>
+        <td>
+          <label for="name"><b>Name</b></label>
+        </td>
+        <td>
+          <input type="text" placeholder="Enter Name" name="name" id="name" required>
+        </td>
+      </tr>
+
+
+      <br>
+      <tr>
+        <td>
+          <label for="psw"><b>Password</b></label>
+        </td>
+        <td>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        </td>
+      </tr>
+    </table>
+      <br>
+      <!-- <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+          <hr> -->
+
+      <!-- <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> -->
+      <button type="submit" class="registerbtn" formaction="/register">Register</button>
+      <button type="submit" class="loginbth" formaction="/login">Login</button>
+    </div>
+
+</body>
+
+</html>
