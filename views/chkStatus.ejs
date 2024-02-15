@@ -13,9 +13,37 @@
 <body>
 
     <div class="container">
-        <p> <%= message %> </p>
+        <form action="/" method="post">
+        <h5> Following books have been borrowed by Member: <%= name %> </h5><br>
 
-        
+        <table  class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Select</th>
+                  <th>Book Name</th>
+                  <th>Author</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% if (count_bb > 0){ %>
+                <%   records.forEach((row,index) => { %>
+                    <tr>
+                        <td><input type="checkbox" name="bookid" value =<%= row.id %> ></td>
+                        <!-- <td><label name="bookid" value =<%= row.id %> > <%=index+1%></td> -->
+                        <td><%= row.bname %></td>
+                        <td><%=  row.author %></td>
+                      </tr>
+                <% })} else { %>
+                    <tr>
+                        <td colspan="2">No Record Found</td>
+                    </tr>
+                    <%} %>
+              </tbody>
+        </table>
+        <button type="submit" class="btn btn-dark" formaction="/returnBook">Return Book</button>
+        <button type="submit" class="btn btn-dark" formaction="/returnDash">View Dashboard</button>
+    </form>
+
     </div>
 
         <%- include('footer.ejs') %>

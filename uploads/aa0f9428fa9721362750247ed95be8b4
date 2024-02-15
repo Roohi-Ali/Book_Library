@@ -1,0 +1,53 @@
+[
+    {
+      "bname": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "available": true
+    },
+    {
+      "bname": "1984",
+      "author": "George Orwell",
+      "available": true
+    },
+    {
+      "bname": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "available": false
+    },
+    {
+      "bname": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "available": true
+    },
+    {
+      "bname": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "available": true
+    },
+    {
+      "bname": "Brave New World",
+      "author": "Aldous Huxley",
+      "available": true
+    },
+    {
+      "bname": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "available": false
+    },
+    {
+      "bname": "To the Lighthouse",
+      "author": "Virginia Woolf",
+      "available": true
+    },
+    {
+      "bname": "Moby-Dick",
+      "author": "Herman Melville",
+      "available": true
+    },
+    {
+      "bname": "Frankenstein",
+      "author": "Mary Shelley",
+      "available": true
+    }
+  ]
+  

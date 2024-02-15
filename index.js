@@ -5,7 +5,6 @@ const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
 const PORT = process.env.PORT;
-console.log(PORT)
 const ejs = require('ejs');
 const dbData = require('./database/dbConn');
 const router = require('./routes/router.js')
@@ -26,7 +25,6 @@ app.use('/',router)
 
 
 mongoose.connection.once('open',()=>{
-    console.log('Connected to MongoDB')
     app.listen(PORT, ()=>{ console.log(`Server running on port ${PORT}`)})
 })
 
